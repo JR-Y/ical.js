@@ -213,7 +213,7 @@
           if (exdate[name])
           {
             if (typeof exdate[name].toISOString === 'function') {
-              curr[name][exdate[name].toISOString().substring(0, 10)] = exdate[name];
+              curr.exdate.push(exdate[name]);
             } else {
               console.error("No toISOString function in exdate[name]", exdate[name]);
             }
